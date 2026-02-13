@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HILLS - Hope Institute of Languages and Life Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'royal-blue': '#1e3a8a',
+                        'gold': '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(30, 58, 138, 0.85) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-royal-blue">
+                            <span class="text-gold">HILLS</span>
+                        </h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-royal-blue transition font-medium">Home</a>
+                    <a href="#languages" class="text-gray-700 hover:text-royal-blue transition font-medium">Languages</a>
+                    <a href="#vocational" class="text-gray-700 hover:text-royal-blue transition font-medium">Vocational Skills</a>
+                    <a href="#production" class="text-gray-700 hover:text-royal-blue transition font-medium">Production</a>
+                    <a href="#contact" class="text-gray-700 hover:text-royal-blue transition font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-royal-blue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Home</a>
+                <a href="#languages" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Languages</a>
+                <a href="#vocational" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Vocational Skills</a>
+                <a href="#production" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Production</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center mt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80" 
+                 alt="Modern Classroom" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Hope Institute of Languages<br>
+                <span class="text-gold">and Life Skills</span>
+            </h1>
+            <p class="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-10 font-light">
+                Empowering communities through Language Proficiency<br class="hidden sm:block">
+                and Practical Vocational Training
+            </p>
+            <a href="#contact" class="inline-block bg-gold hover:bg-yellow-500 text-royal-blue font-bold text-lg px-10 py-4 rounded-full transition transform hover:scale-105 shadow-2xl">
+                Register Now
+            </a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-3xl"></i>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-4">
+                    Language Programs
+                </h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Master new languages with our comprehensive physical and virtual training programs
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- IELTS -->
+                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-gold mb-4">
+                        <i class="fas fa-graduation-cap text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">IELTS Preparation</h3>
+                    <p class="text-gray-200 mb-4">Comprehensive test preparation program</p>
+                    <div class="flex items-center text-gold">
+                        <i class="far fa-clock mr-2"></i>
+                        <span class="font-semibold">2 Months</span>
+                    </div>
+                </div>
+
+                <!-- Business English -->
+                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-gold mb-4">
+                        <i class="fas fa-briefcase text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Business English</h3>
+                    <p class="text-gray-200 mb-4">Professional communication skills</p>
+                    <div class="flex items-center text-gold">
+                        <i class="far fa-clock mr-2"></i>
+                        <span class="font-semibold">50 Days</span>
+                    </div>
+                </div>
+
+                <!-- ESL -->
+                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-gold mb-4">
+                        <i class="fas fa-language text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">ESL</h3>
+                    <p class="text-gray-200 mb-4">English as a Second Language</p>
+                    <div class="flex items-center text-gold">
+                        <i class="far fa-clock mr-2"></i>
+                        <span class="font-semibold">2 Months</span>
+                    </div>
+                </div>
+
+                <!-- University Foundation -->
+                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-gold mb-4">
+                        <i class="fas fa-university text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">University Foundation</h3>
+                    <p class="text-gray-200 mb-4">Academic English preparation</p>
+                    <div class="flex items-center text-gold">
+                        <i class="far fa-clock mr-2"></i>
+                        <span class="font-semibold">6 Months</span>
+                    </div>
+                </div>
+
+                <!-- Arabic -->
+                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-gold mb-4">
+                        <i class="fas fa-book-open text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Arabic Language</h3>
+                    <p class="text-gray-200 mb-4">Foundational Arabic communication</p>
+                    <div class="flex items-center text-gold">
+                        <i class="far fa-clock mr-2"></i>
+                        <span class="font-semibold">1 Month</span>
+                    </div>
+                </div>
+
+                <!-- French -->
+                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-gold mb-4">
+                        <i class="fas fa-globe text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">French Language</h3>
+                    <p class="text-gray-200 mb-4">Conversational and formal French</p>
+                    <div class="flex items-center text-gold">
+                        <i class="far fa-clock mr-2"></i>
+                        <span class="font-semibold">3 Months</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vocational Skills Section -->
+    <section id="vocational" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-4">
+                    Vocational Skills Training
+                </h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hands-on practical training for real-world career opportunities
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Electronics -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mobile-alt text-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Simple Electronics</h3>
+                    <p class="text-gray-600">Phone & PC Repair</p>
+                </div>
+
+                <!-- Plumbing -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-wrench text-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Plumbing</h3>
+                    <p class="text-gray-600">Professional Installation & Repair</p>
+                </div>
+
+                <!-- Carpentry -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hammer text-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Carpentry</h3>
+                    <p class="text-gray-600">Woodwork & Furniture Making</p>
+                </div>
+
+                <!-- Welding -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-burn text-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Welding</h3>
+                    <p class="text-gray-600">Metal Fabrication & Joining</p>
+                </div>
+
+                <!-- Computer Skills -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-laptop text-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Computer Skills</h3>
+                    <p class="text-gray-600">Digital Literacy & Applications</p>
+                </div>
+            </div>
+
+            <!-- Workshop Image -->
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80" 
+                     alt="Vocational Workshop" 
+                     class="w-full h-96 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Workshop Section -->
+    <section id="production" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-4">
+                    Production Workshop
+                </h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <h3 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
+                    Detergent & Soap Making
+                </h3>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Learn to produce high-quality cleaning products for personal use or business
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Liquid Soap -->
+                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-flask text-gold text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-white">Liquid Soap</h4>
+                </div>
+
+                <!-- Bar Soap -->
+                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-square text-gold text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-white">Bar Soap</h4>
+                </div>
+
+                <!-- Shampoo -->
+                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-pump-soap text-gold text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-white">Shampoo</h4>
+                </div>
+
+                <!-- Hand Wash -->
+                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-hands-wash text-gold text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-white">Hand Wash</h4>
+                </div>
+
+                <!-- Bleach -->
+                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-fill-drip text-gold text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-white">Bleach</h4>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-16 text-center">
+                <p class="text-lg text-gray-700 mb-6">
+                    Start your entrepreneurial journey with practical production skills
+                </p>
+                <a href="#contact" class="inline-block bg-royal-blue hover:bg-blue-900 text-white font-bold text-lg px-8 py-4 rounded-full transition transform hover:scale-105 shadow-lg">
+                    Enroll in Production Workshop
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <section id="contact" class="bg-royal-blue text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-200">
+                    Ready to transform your future? Contact us today!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <!-- Address -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-royal-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Location</h3>
+                    <p class="text-gray-200">Mitala Road</p>
+                    <p class="text-gray-200">P.O. Box 1618</p>
+                </div>
+
+                <!-- Phone -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-royal-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <p class="text-gray-200">
+                        <a href="tel:0701900922" class="hover:text-gold transition">0701 900 922</a>
+                    </p>
+                </div>
+
+                <!-- Email -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-royal-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-200">
+                        <a href="mailto:info@hills.ac.ug" class="hover:text-gold transition">info@hills.ac.ug</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Registration CTA -->
+            <div class="bg-white rounded-2xl p-8 md:p-12 text-center shadow-2xl">
+                <h3 class="text-3xl md:text-4xl font-bold text-royal-blue mb-4">
+                    Ready to Start Your Journey?
+                </h3>
+                <p class="text-xl text-gray-700 mb-8">
+                    Join hundreds of students who have transformed their lives through our programs
+                </p>
+                <a href="tel:0701900922" class="inline-block bg-gold hover:bg-yellow-500 text-royal-blue font-bold text-lg px-10 py-4 rounded-full transition transform hover:scale-105 shadow-lg">
+                    Call to Register Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold">
+                        <span class="text-gold">HILLS</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-1">Empowering Communities Since 2020</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">
+                        &copy; 2024 Hope Institute of Languages and Life Skills. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80; // Height of fixed navbar
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
