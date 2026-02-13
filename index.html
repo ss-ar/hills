@@ -11,8 +11,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'royal-blue': '#1e3a8a',
-                        'gold': '#fbbf24',
+                        'hills-blue': '#4A9FD8',
+                        'hills-green': '#7BC043',
+                        'hills-orange': '#F7931E',
                     }
                 }
             }
@@ -24,9 +25,17 @@
             font-family: 'Montserrat', sans-serif;
         }
         .gradient-overlay {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(30, 58, 138, 0.85) 100%);
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(74, 159, 216, 0.4) 50%, rgba(123, 192, 67, 0.45) 100%);
+        }
+        .hero-text {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 0, 0, 0.5);
         }
     </style>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -35,24 +44,22 @@
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold text-royal-blue">
-                            <span class="text-gold">HILLS</span>
-                        </h1>
+                        <img src="logo.png" alt="HILLS Logo" class="h-12 md:h-16">
                     </div>
                 </div>
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-royal-blue transition font-medium">Home</a>
-                    <a href="#languages" class="text-gray-700 hover:text-royal-blue transition font-medium">Languages</a>
-                    <a href="#vocational" class="text-gray-700 hover:text-royal-blue transition font-medium">Vocational Skills</a>
-                    <a href="#production" class="text-gray-700 hover:text-royal-blue transition font-medium">Production</a>
-                    <a href="#contact" class="text-gray-700 hover:text-royal-blue transition font-medium">Contact</a>
+                    <a href="#home" class="text-gray-700 hover:text-hills-blue transition font-medium">Home</a>
+                    <a href="#languages" class="text-gray-700 hover:text-hills-blue transition font-medium">Languages</a>
+                    <a href="#vocational" class="text-gray-700 hover:text-hills-blue transition font-medium">Vocational Skills</a>
+                    <a href="#production" class="text-gray-700 hover:text-hills-blue transition font-medium">Production</a>
+                    <a href="#contact" class="text-gray-700 hover:text-hills-blue transition font-medium">Contact</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-royal-blue focus:outline-none">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-hills-blue focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -62,11 +69,11 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Home</a>
-                <a href="#languages" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Languages</a>
-                <a href="#vocational" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Vocational Skills</a>
-                <a href="#production" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Production</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-royal-blue hover:text-white transition rounded">Contact</a>
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-hills-blue hover:text-white transition rounded">Home</a>
+                <a href="#languages" class="block px-3 py-2 text-gray-700 hover:bg-hills-blue hover:text-white transition rounded">Languages</a>
+                <a href="#vocational" class="block px-3 py-2 text-gray-700 hover:bg-hills-blue hover:text-white transition rounded">Vocational Skills</a>
+                <a href="#production" class="block px-3 py-2 text-gray-700 hover:bg-hills-blue hover:text-white transition rounded">Production</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-hills-blue hover:text-white transition rounded">Contact</a>
             </div>
         </div>
     </nav>
@@ -74,22 +81,22 @@
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center mt-20">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80" 
+            <img src="IMG_9013.jpg" 
                  alt="Modern Classroom" 
                  class="w-full h-full object-cover">
             <div class="absolute inset-0 gradient-overlay"></div>
         </div>
         
         <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 class="hero-text text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 Hope Institute of Languages<br>
-                <span class="text-gold">and Life Skills</span>
+                <span class="text-hills-orange">and Life Skills</span>
             </h1>
-            <p class="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-10 font-light">
+            <p class="hero-text text-xl sm:text-2xl md:text-3xl text-white mb-10 font-light">
                 Empowering communities through Language Proficiency<br class="hidden sm:block">
                 and Practical Vocational Training
             </p>
-            <a href="#contact" class="inline-block bg-gold hover:bg-yellow-500 text-royal-blue font-bold text-lg px-10 py-4 rounded-full transition transform hover:scale-105 shadow-2xl">
+            <a href="#contact" class="inline-block bg-hills-orange hover:bg-orange-600 text-white font-bold text-lg px-10 py-4 rounded-full transition transform hover:scale-105 shadow-2xl">
                 Register Now
             </a>
         </div>
@@ -104,89 +111,96 @@
     <section id="languages" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-hills-blue mb-4">
                     Language Programs
                 </h2>
-                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-hills-green mx-auto mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Master new languages with our comprehensive physical and virtual training programs
                 </p>
             </div>
 
+            <!-- Featured Image -->
+            <div class="mb-12 rounded-2xl overflow-hidden shadow-xl">
+                <img src="IMG_4025.jpg" 
+                     alt="Language Learning Classroom" 
+                     class="w-full h-96 object-cover">
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- IELTS -->
-                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
-                    <div class="text-gold mb-4">
+                <div class="bg-gradient-to-br from-hills-blue to-blue-600 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-white mb-4">
                         <i class="fas fa-graduation-cap text-5xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">IELTS Preparation</h3>
-                    <p class="text-gray-200 mb-4">Comprehensive test preparation program</p>
-                    <div class="flex items-center text-gold">
+                    <p class="text-gray-100 mb-4">Comprehensive test preparation program</p>
+                    <div class="flex items-center text-hills-orange">
                         <i class="far fa-clock mr-2"></i>
                         <span class="font-semibold">2 Months</span>
                     </div>
                 </div>
 
                 <!-- Business English -->
-                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
-                    <div class="text-gold mb-4">
+                <div class="bg-gradient-to-br from-hills-green to-green-600 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-white mb-4">
                         <i class="fas fa-briefcase text-5xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">Business English</h3>
-                    <p class="text-gray-200 mb-4">Professional communication skills</p>
-                    <div class="flex items-center text-gold">
+                    <p class="text-gray-100 mb-4">Professional communication skills</p>
+                    <div class="flex items-center text-white">
                         <i class="far fa-clock mr-2"></i>
                         <span class="font-semibold">50 Days</span>
                     </div>
                 </div>
 
                 <!-- ESL -->
-                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
-                    <div class="text-gold mb-4">
+                <div class="bg-gradient-to-br from-hills-orange to-orange-600 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-white mb-4">
                         <i class="fas fa-language text-5xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">ESL</h3>
-                    <p class="text-gray-200 mb-4">English as a Second Language</p>
-                    <div class="flex items-center text-gold">
+                    <p class="text-gray-100 mb-4">English as a Second Language</p>
+                    <div class="flex items-center text-white">
                         <i class="far fa-clock mr-2"></i>
                         <span class="font-semibold">2 Months</span>
                     </div>
                 </div>
 
                 <!-- University Foundation -->
-                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
-                    <div class="text-gold mb-4">
+                <div class="bg-gradient-to-br from-hills-blue to-blue-600 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-white mb-4">
                         <i class="fas fa-university text-5xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">University Foundation</h3>
-                    <p class="text-gray-200 mb-4">Academic English preparation</p>
-                    <div class="flex items-center text-gold">
+                    <p class="text-gray-100 mb-4">Academic English preparation</p>
+                    <div class="flex items-center text-hills-orange">
                         <i class="far fa-clock mr-2"></i>
                         <span class="font-semibold">6 Months</span>
                     </div>
                 </div>
 
                 <!-- Arabic -->
-                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
-                    <div class="text-gold mb-4">
+                <div class="bg-gradient-to-br from-hills-green to-green-600 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-white mb-4">
                         <i class="fas fa-book-open text-5xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">Arabic Language</h3>
-                    <p class="text-gray-200 mb-4">Foundational Arabic communication</p>
-                    <div class="flex items-center text-gold">
+                    <p class="text-gray-100 mb-4">Foundational Arabic communication</p>
+                    <div class="flex items-center text-white">
                         <i class="far fa-clock mr-2"></i>
                         <span class="font-semibold">1 Month</span>
                     </div>
                 </div>
 
                 <!-- French -->
-                <div class="bg-gradient-to-br from-royal-blue to-blue-900 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
-                    <div class="text-gold mb-4">
+                <div class="bg-gradient-to-br from-hills-orange to-orange-600 rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
+                    <div class="text-white mb-4">
                         <i class="fas fa-globe text-5xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">French Language</h3>
-                    <p class="text-gray-200 mb-4">Conversational and formal French</p>
-                    <div class="flex items-center text-gold">
+                    <p class="text-gray-100 mb-4">Conversational and formal French</p>
+                    <div class="flex items-center text-white">
                         <i class="far fa-clock mr-2"></i>
                         <span class="font-semibold">3 Months</span>
                     </div>
@@ -199,68 +213,71 @@
     <section id="vocational" class="py-20 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-hills-blue mb-4">
                     Vocational Skills Training
                 </h2>
-                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-hills-orange mx-auto mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Hands-on practical training for real-world career opportunities
                 </p>
             </div>
 
+            <!-- Featured Image -->
+            <div class="mb-12 rounded-2xl overflow-hidden shadow-xl">
+                <img src="IMG_4963.jpg" 
+                     alt="Vocational Workshop" 
+                     class="w-full h-96 object-cover">
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <!-- Electronics -->
-                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
-                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-mobile-alt text-gold text-3xl"></i>
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition border-t-4 border-hills-blue">
+                    <div class="w-20 h-20 bg-hills-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mobile-alt text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Simple Electronics</h3>
+                    <h3 class="text-2xl font-bold text-hills-blue mb-3">Simple Electronics</h3>
                     <p class="text-gray-600">Phone & PC Repair</p>
                 </div>
 
                 <!-- Plumbing -->
-                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
-                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-wrench text-gold text-3xl"></i>
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition border-t-4 border-hills-green">
+                    <div class="w-20 h-20 bg-hills-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-wrench text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Plumbing</h3>
+                    <h3 class="text-2xl font-bold text-hills-green mb-3">Plumbing</h3>
                     <p class="text-gray-600">Professional Installation & Repair</p>
                 </div>
 
                 <!-- Carpentry -->
-                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
-                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-hammer text-gold text-3xl"></i>
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition border-t-4 border-hills-orange">
+                    <div class="w-20 h-20 bg-hills-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hammer text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Carpentry</h3>
+                    <h3 class="text-2xl font-bold text-hills-orange mb-3">Carpentry</h3>
                     <p class="text-gray-600">Woodwork & Furniture Making</p>
                 </div>
 
                 <!-- Welding -->
-                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
-                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-burn text-gold text-3xl"></i>
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition border-t-4 border-hills-blue">
+                    <div class="w-20 h-20 bg-hills-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-burn text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Welding</h3>
+                    <h3 class="text-2xl font-bold text-hills-blue mb-3">Welding</h3>
                     <p class="text-gray-600">Metal Fabrication & Joining</p>
                 </div>
 
                 <!-- Computer Skills -->
-                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition">
-                    <div class="w-20 h-20 bg-royal-blue rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-laptop text-gold text-3xl"></i>
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition border-t-4 border-hills-green">
+                    <div class="w-20 h-20 bg-hills-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-laptop text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-royal-blue mb-3">Computer Skills</h3>
+                    <h3 class="text-2xl font-bold text-hills-green mb-3">Computer Skills</h3>
                     <p class="text-gray-600">Digital Literacy & Applications</p>
                 </div>
             </div>
 
-            <!-- Workshop Image -->
-            <div class="rounded-2xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80" 
-                     alt="Vocational Workshop" 
-                     class="w-full h-96 object-cover">
-            </div>
+            <!-- Workshop Image Removed - Already added above -->
+            
         </div>
     </section>
 
@@ -268,10 +285,10 @@
     <section id="production" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-hills-blue mb-4">
                     Production Workshop
                 </h2>
-                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-hills-green mx-auto mb-6"></div>
                 <h3 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
                     Detergent & Soap Making
                 </h3>
@@ -280,34 +297,41 @@
                 </p>
             </div>
 
+            <!-- Featured Image -->
+            <div class="mb-12 rounded-2xl overflow-hidden shadow-xl">
+                <img src="DSC_6940.jpg" 
+                     alt="Production Workshop" 
+                     class="w-full h-96 object-cover">
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                 <!-- Liquid Soap -->
-                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
-                    <i class="fas fa-flask text-gold text-4xl mb-4"></i>
+                <div class="bg-hills-blue rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-flask text-white text-4xl mb-4"></i>
                     <h4 class="text-xl font-bold text-white">Liquid Soap</h4>
                 </div>
 
                 <!-- Bar Soap -->
-                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
-                    <i class="fas fa-square text-gold text-4xl mb-4"></i>
+                <div class="bg-hills-green rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-square text-white text-4xl mb-4"></i>
                     <h4 class="text-xl font-bold text-white">Bar Soap</h4>
                 </div>
 
                 <!-- Shampoo -->
-                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
-                    <i class="fas fa-pump-soap text-gold text-4xl mb-4"></i>
+                <div class="bg-hills-orange rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-pump-soap text-white text-4xl mb-4"></i>
                     <h4 class="text-xl font-bold text-white">Shampoo</h4>
                 </div>
 
                 <!-- Hand Wash -->
-                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
-                    <i class="fas fa-hands-wash text-gold text-4xl mb-4"></i>
+                <div class="bg-hills-blue rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-hands-wash text-white text-4xl mb-4"></i>
                     <h4 class="text-xl font-bold text-white">Hand Wash</h4>
                 </div>
 
                 <!-- Bleach -->
-                <div class="bg-gradient-to-b from-royal-blue to-blue-800 rounded-xl p-6 text-center transform hover:scale-105 transition">
-                    <i class="fas fa-fill-drip text-gold text-4xl mb-4"></i>
+                <div class="bg-hills-green rounded-xl p-6 text-center transform hover:scale-105 transition">
+                    <i class="fas fa-fill-drip text-white text-4xl mb-4"></i>
                     <h4 class="text-xl font-bold text-white">Bleach</h4>
                 </div>
             </div>
@@ -317,7 +341,7 @@
                 <p class="text-lg text-gray-700 mb-6">
                     Start your entrepreneurial journey with practical production skills
                 </p>
-                <a href="#contact" class="inline-block bg-royal-blue hover:bg-blue-900 text-white font-bold text-lg px-8 py-4 rounded-full transition transform hover:scale-105 shadow-lg">
+                <a href="#contact" class="inline-block bg-hills-orange hover:bg-orange-600 text-white font-bold text-lg px-8 py-4 rounded-full transition transform hover:scale-105 shadow-lg">
                     Enroll in Production Workshop
                 </a>
             </div>
@@ -325,11 +349,11 @@
     </section>
 
     <!-- Contact/Footer Section -->
-    <section id="contact" class="bg-royal-blue text-white py-20">
+    <section id="contact" class="bg-hills-blue text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
-                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-hills-orange mx-auto mb-6"></div>
                 <p class="text-xl text-gray-200">
                     Ready to transform your future? Contact us today!
                 </p>
@@ -338,8 +362,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
                 <!-- Address -->
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-map-marker-alt text-royal-blue text-2xl"></i>
+                    <div class="w-16 h-16 bg-hills-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Location</h3>
                     <p class="text-gray-200">Mitala Road</p>
@@ -348,36 +372,37 @@
 
                 <!-- Phone -->
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-phone text-royal-blue text-2xl"></i>
+                    <div class="w-16 h-16 bg-hills-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Phone</h3>
                     <p class="text-gray-200">
-                        <a href="tel:0701900922" class="hover:text-gold transition">0701 900 922</a>
+                        <a href="tel:0767935988" class="hover:text-hills-orange transition">0767 935 988</a> | 
+                        <a href="tel:0701900922" class="hover:text-hills-orange transition">0701 900 922</a>
                     </p>
                 </div>
 
                 <!-- Email -->
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-envelope text-royal-blue text-2xl"></i>
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-hills-blue text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Email</h3>
                     <p class="text-gray-200">
-                        <a href="mailto:info@hills.ac.ug" class="hover:text-gold transition">info@hills.ac.ug</a>
+                        <a href="/cdn-cgi/l/email-protection#9cf5f2faf3dcf4f5f0f0efb2fdffb2e9fb" class="hover:text-hills-orange transition"><span class="__cf_email__" data-cfemail="82ebece4edc2eaebeeeef1ace3e1acf7e5">customerservice.hills@gmail.com</span></a>
                     </p>
                 </div>
             </div>
 
             <!-- Registration CTA -->
             <div class="bg-white rounded-2xl p-8 md:p-12 text-center shadow-2xl">
-                <h3 class="text-3xl md:text-4xl font-bold text-royal-blue mb-4">
+                <h3 class="text-3xl md:text-4xl font-bold text-hills-blue mb-4">
                     Ready to Start Your Journey?
                 </h3>
                 <p class="text-xl text-gray-700 mb-8">
                     Join hundreds of students who have transformed their lives through our programs
                 </p>
-                <a href="tel:0701900922" class="inline-block bg-gold hover:bg-yellow-500 text-royal-blue font-bold text-lg px-10 py-4 rounded-full transition transform hover:scale-105 shadow-lg">
+                <a href="tel:0701900922" class="inline-block bg-hills-orange hover:bg-orange-600 text-white font-bold text-lg px-10 py-4 rounded-full transition transform hover:scale-105 shadow-lg">
                     Call to Register Now
                 </a>
             </div>
@@ -385,18 +410,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-950 text-white py-8">
+    <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <h3 class="text-2xl font-bold">
-                        <span class="text-gold">HILLS</span>
-                    </h3>
-                    <p class="text-gray-400 text-sm mt-1">Empowering Communities Since 2020</p>
+                    <img src="logo.png" alt="HILLS Logo" class="h-10">
+                    <p class="text-gray-400 text-sm mt-1">Empowering Communities.</p>
                 </div>
                 <div class="text-center md:text-right">
                     <p class="text-gray-400">
-                        &copy; 2024 Hope Institute of Languages and Life Skills. All rights reserved.
+                        &copy; 2026 Hope Institute of Languages and Life Skills. All rights reserved.
                     </p>
                 </div>
             </div>
@@ -404,7 +427,7 @@
     </footer>
 
     <!-- Mobile Menu Script -->
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -427,14 +450,4 @@
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     const offset = 80; // Height of fixed navbar
-                    const targetPosition = target.offsetTop - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+                    const targetPosition = target.offsetTo
